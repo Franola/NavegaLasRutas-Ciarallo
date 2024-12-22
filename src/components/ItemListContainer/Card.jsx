@@ -1,6 +1,8 @@
-function Card({nombre,precio,desarrollador}){
+import { Link } from "react-router-dom"
+
+function Card({id, nombre,precio,desarrollador}){
   return (
-        <div className="card">
+        <Link to={`/producto/${id}`} className="card">
             <div className="card-img" />
             <div className="card-info">
                 <p className="text-title">{nombre}</p>
@@ -16,7 +18,7 @@ function Card({nombre,precio,desarrollador}){
                     </svg>
                 </div>
             </div>
-        </div>
+        </Link>
   );
 }
 

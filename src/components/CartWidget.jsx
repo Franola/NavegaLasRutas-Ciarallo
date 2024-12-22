@@ -3,8 +3,8 @@ import './CartWidget.css'
 function CartWidget(){
     return (
         <div>
-            <button class="carrito-btn">
-                <img class="carrito-img" src="src/assets/icon-carrito.png"/>
+            <button className="carrito-btn">
+                <img className="carrito-img" src="src/assets/icon-carrito.png"/>
             </button>
         </div>
     )

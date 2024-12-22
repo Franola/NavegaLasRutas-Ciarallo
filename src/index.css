@@ -42,6 +42,14 @@ body {
   min-height: 100vh;
 }
 
+a{
+  text-decoration: none;
+}
+
+a:link, :visited, :hover, :active{
+  color: #fff;
+}
+
 /*
 a {
   font-weight: 500;
