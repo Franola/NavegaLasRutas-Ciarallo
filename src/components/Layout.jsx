@@ -1,5 +1,6 @@
 import { Link,Outlet } from "react-router-dom"
 import CartWidget from "./CartWidget"
+import './NavBar.css'
 
 function Layout() {
   return (
