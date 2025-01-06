@@ -6,10 +6,10 @@ function ItemList({items}) {
     const {categoria} = useParams();
 
     if(categoria=="nuevos"){
-        items=items.filter(item=>item.categoria==="Juego nuevo")
+        items=items.filter(item=>item.first_release_date >= 852087600)
     }
     if(categoria=="retro"){
-        items=items.filter(item=>item.categoria==="Juego retro")
+        items=items.filter(item=>item.first_release_date < 852087600)
     }
     
     return (
