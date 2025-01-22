@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom"
 
 function ItemList({items}) {
     const {categoria} = useParams();
-
+    console.log(items)
     if(categoria=="nuevos"){
         items=items.filter(item=>item.first_release_date >= 852087600)
     }
