@@ -24,8 +24,9 @@ function DetalleProducto() {
         <div className="img" />
         <div className="info">
             <h1 className="titulo">{producto.name}</h1>
-            <p className="dasarrollador">Desarrollador: {producto.involved_companies[0].company.name}</p>
-            <h3 className="precio">$ {producto.precio}</h3>
+            <p className="dasarrollador"><b>Desarrollador:</b> {producto.involved_companies[0].company.name}</p>
+            <p className="resumen">{producto.summary}</p>
+            <h3 className="precio">$ {Math.round(producto.rating, 2)}</h3>
             
             <button className="button">
             <svg viewBox="0 0 16 16" className="bi bi-cart-check" height="24" width="24" xmlns="http://www.w3.org/2000/svg" fill="#fff">
