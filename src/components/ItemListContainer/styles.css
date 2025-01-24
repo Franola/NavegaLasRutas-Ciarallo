@@ -9,8 +9,8 @@
 }
 
 
-.card {
-    width: 190px;
+.cardd {
+    width: 220px;
     height: auto;
     padding: .8em;
     background: #1a1a1a;
@@ -23,7 +23,7 @@
     justify-content: space-between;
 }
 
-.card-img {
+.cardd-img {
     background-color: black;
     height: 190px;
     width: 190px;
@@ -31,7 +31,7 @@
     transition: .3s ease;
 }
 
-.card-info {
+.cardd-info {
     /*padding-top: 10%;*/
 }
 
@@ -40,7 +40,7 @@ svg {
     height: 20px;
 }
 
-.card-footer {
+.cardd-footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -50,7 +50,7 @@ svg {
 }
 
 /*Text*/
-.text-title {
+.text_title {
     font-weight: 900;
     font-size: 1em;
     line-height: 1.5;
@@ -58,7 +58,7 @@ svg {
     margin-bottom: 0.2rem;
 }
 
-.text-body {
+.text_body {
     font-size: .9em;
     /* padding-bottom: 10px; */
     margin-top: 0.2rem;
@@ -66,7 +66,7 @@ svg {
 }
 
 /*Button*/
-.card-button {
+.cardd-button {
     border: 1px solid #252525;
     display: flex;
     padding: .3em;
@@ -76,13 +76,13 @@ svg {
 }
 
 /*Hover*/
-.card-img:hover {
+.cardd-img:hover {
     transform: translateY(-25%);
     /* box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px; */
     box-shadow: rgba(219, 52, 252, 0.25) 0px 13px 47px -5px, rgba(219, 52, 252, 0.25) 0px 8px 16px -8px;
 }
 
-.card-button:hover {
+.cardd-button:hover {
     border: 1px solid #971bc8;
     background-color: #971bc8;
 }

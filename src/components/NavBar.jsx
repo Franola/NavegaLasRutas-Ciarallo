@@ -3,9 +3,9 @@ import './NavBar.css'
 
 function NavBar(){
     return (
-        <nav className="navbar">
+        <nav className="nav-bar">
             <a className="titulo">Apolo 99</a>
-            <ul className="navbar-items">
+            <ul className="nav-bar-items">
                 <li><button>Juegos Nuevos</button></li>
                 <li><button>Juegos Retro</button></li>
             </ul>

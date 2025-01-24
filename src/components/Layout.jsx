@@ -5,9 +5,9 @@ import './NavBar.css'
 function Layout() {
   return (
     <>
-        <nav className="navbar">
+        <nav className="nav-bar">
             <a className="titulo">Apolo 99</a>
-            <ul className="navbar-items">
+            <ul className="nav-bar-items">
                 <li>
                     <Link to={"/"}>Inicio</Link>
                 </li>

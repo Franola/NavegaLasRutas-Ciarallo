@@ -5,12 +5,15 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #242424 !important; 
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --bs-body-bg: #242424 !important;
+  --bs-body-color: #fff !important;
 }
 
 h1 {
@@ -40,14 +43,17 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #242424 !important;   
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none !important;
+  color: #fff !important;
 }
 
-a:link, :visited, :hover, :active{
-  color: #fff;
+a:link, a:visited, a:hover, a:active{
+  color: #fff !important;
+  text-decoration: none !important;
 }
 
 /*
