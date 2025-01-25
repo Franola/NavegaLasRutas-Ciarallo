@@ -15,3 +15,8 @@
 .btn-close{
     color: #fff !important;
 }
+
+.carrito-footer{
+	height: fit-content;
+	border-top: solid 1px;
+}
