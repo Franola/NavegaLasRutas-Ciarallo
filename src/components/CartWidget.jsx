@@ -15,7 +15,7 @@ function CartWidget(){
     useEffect(() => {
         let total = 0;
         carrito.forEach((producto) => {
-            total += Math.round(producto.rating,2) * producto.cantidad;
+            total += Math.round(producto.price,2) * producto.cantidad;
         });
         setTotal(total);
     }, [carrito]);

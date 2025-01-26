@@ -10,11 +10,6 @@ import { CarritoProvider } from './components/context/CarritoContext';
 
 function App() {
 
-  // const [items,setItems] = useState(productos);
-  // const handleProductos = (productos) => {
-  //   setItems(productos)
-  // }
-
   return (
     <>
       <CarritoProvider>

@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { CarritoContext } from "../context/CarritoContext";
 import ProdutosContext from "../context/productosContext";
 
-function Card({id, name, involved_companies, rating}) {
+function Card({id, name, involved_companies, price}) {
     const {agregarProducto} = useContext(CarritoContext);
     const {productos} = useContext(ProdutosContext);
 
@@ -23,7 +23,7 @@ function Card({id, name, involved_companies, rating}) {
             </Link>
             <div className="cardd-footer">
                 <Link to={`/producto/${id}`}>
-                    <span className="text_title">${Math.round(rating,2)}</span>
+                    <span className="text_title">${Math.round(price,2)}</span>
                 </Link>
                 <button className="cardd-button" onClick={handleAdd}>
                     <svg className="svg_icon" viewBox="0 0 20 20">

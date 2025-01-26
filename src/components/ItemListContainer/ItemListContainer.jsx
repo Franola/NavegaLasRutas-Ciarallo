@@ -13,17 +13,14 @@ function ItemListContainer({mensaje}) {
   console.log(productos)
 
   useEffect(() => {
-    if(productos.length != items.length){
       setItems(productos);
-    }
-
   }, [productos]);
 
     return (
-        <div className="itemListContainer">
-            <h1>{mensaje + (categoria != undefined ? categoria : "")}</h1>
-            <ItemList items={items}/>
-        </div>
+      <div className="itemListContainer">
+        <h1>{mensaje + (categoria != undefined ? categoria : "")}</h1>
+        <ItemList items={items}/>
+      </div>
     )
 }
 

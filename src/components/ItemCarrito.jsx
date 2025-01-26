@@ -25,7 +25,7 @@ function ItemCarrito({producto}) {
                             <img className="mas-img" src="/src/assets/icon-mas.png" alt="Agregar uno"/>
                         </button>
                     </div>
-                    <span className="carrito-item-precio" >$ {Math.round(producto.rating,2)*producto.cantidad}</span>
+                    <span className="carrito-item-precio" >$ {Math.round(producto.price,2)*producto.cantidad}</span>
                 </div>
             </div>
         </div>
