@@ -22,39 +22,6 @@
 
 }
 
-.carrito-item-botones > button{
-	width: 28px;
-	height: 28px;
-	padding: 3px;
-}
-.carrito-item-botones > button > img{
-	height: 18px;
-	width: auto;
-}
-
-.carrito-eliminar-btn{
-	margin-right: 0.5rem;
-}
-.basura-img{
-}
-
-.carrito-menos-btn{
-	
-}
-.menos-img{
-}
-
-.carrito-item-cantidad{
-	margin-right: 0.25rem;
-    margin-left: 0.25rem;
-}
-
-.carrito-mas-btn{
-	
-}
-.mas-img{
-}
-
 .carrito-item-precio{
 
 }
