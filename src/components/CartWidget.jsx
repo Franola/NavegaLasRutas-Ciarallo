@@ -38,7 +38,7 @@ function CartWidget(){
                             <span>Total: </span>
                             <span className="carrito-precio-total" id="valor-total-carrito">$ {total}</span>
                         </div>
-                        <Button variant="secondary">Comprar</Button>
+                        <Button variant="success">Comprar</Button>
                         <Button variant="danger" onClick={vaciar}>Vaciar Carrito</Button>
                     </div>
                 </>

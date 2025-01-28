@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { CarritoContext } from "../context/CarritoContext";
 import ProdutosContext from "../context/productosContext";
 
-function Card({id, name, involved_companies, price}) {
+function Card({id, name, involved_companies, cover, price}) {
     const {agregarProducto} = useContext(CarritoContext);
     const {productos} = useContext(ProdutosContext);
 
@@ -15,7 +15,7 @@ function Card({id, name, involved_companies, price}) {
     return (
         <div className="cardd">
             <Link to={`/producto/${id}`}>
-                <div className="cardd-img" />
+                <img className="cardd-img" src={`/src/assets/productos/${cover.image_id}.webp`} />
                 <div className="cardd-info">
                     <p className="text_title">{name}</p>
                     <p className="text_body">{involved_companies[0].company.name}</p>

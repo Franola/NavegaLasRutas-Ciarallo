@@ -31,7 +31,7 @@ function DetalleProducto() {
     }
   return (
     <div className="detalleProducto">
-        <div className="img" />
+        <img className="img" src={`/src/assets/productos/${producto.cover.image_id}.webp`}/>
         <div className="info">
             <h1 className="titulo">{producto.name}</h1>
             <p className="dasarrollador"><b>Desarrollador:</b> {producto.involved_companies[0].company.name}</p>
