@@ -64,8 +64,9 @@ function CartWidget(){
 
     return (
         <div>
-            <Button variant="primary" onClick={handleShow}>
+            <Button variant="primary" onClick={handleShow} className="d-flex align-items-center">
                 <img className="carrito-img" src="/src/assets/icon-carrito.png"/>
+                {carrito.length > 0 && <p className="cantidad-productos"><b>{carrito.length}</b></p>}
             </Button>
 
             <Offcanvas show={show} onHide={handleClose} placement={'end'}>
