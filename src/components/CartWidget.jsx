@@ -6,11 +6,14 @@ import { useContext } from "react";
 import { CarritoContext } from "./context/CarritoContext";
 import ItemCarrito from './ItemCarrito';
 import { useEffect } from 'react';
+import CheckoutModal from './CheckoutModal';
+import React from 'react';
 
 function CartWidget(){
     const [show, setShow] = useState(false);
     const {carrito, vaciar} = useContext(CarritoContext);
     const [total, setTotal] = useState(0);
+    const [modalShow, setModalShow] = React.useState(false);
 
     useEffect(() => {
         let total = 0;
@@ -38,9 +41,18 @@ function CartWidget(){
                             <span>Total: </span>
                             <span className="carrito-precio-total" id="valor-total-carrito">$ {total}</span>
                         </div>
-                        <Button variant="success">Comprar</Button>
+                        <Button variant="success" onClick={() => setModalShow(true)}>Comprar</Button>
                         <Button variant="danger" onClick={vaciar}>Vaciar Carrito</Button>
                     </div>
+
+                    <CheckoutModal
+                        show={modalShow}
+                        onHide={() => setModalShow(false)}
+                        onSubmit={() => {
+                            setModalShow(false);
+                            vaciar();
+                        }}
+                    />
                 </>
             )
         }else{
